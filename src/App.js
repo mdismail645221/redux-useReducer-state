@@ -1,6 +1,6 @@
-
 import './App.css';
-import Child from './components/Child';
+import LongForm from './components/LongForm/LongForm';
+// import Child from './components/Child';
 
 
 
@@ -11,7 +11,8 @@ function App() {
     <div className="App">
 
         {/* <Perent></Perent> */}
-        <Child></Child>
+        {/* <Child></Child> */}
+        <LongForm></LongForm>
     </div>
   );
 }
