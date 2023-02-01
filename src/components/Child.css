@@ -21,10 +21,15 @@
     color: #fff;
     font-size: 900;
     text-align: center;
-    padding: 4px 8px;
+    padding: 4px 20px;
     margin-right: 5px;
     border-radius: 10px;
     font-size: 1.5rem;
+    transition: 3ms;
+}
+
+.child-container button:hover{
+    background-color: rgb(4, 124, 14);
 }
 
 .child-container h3{

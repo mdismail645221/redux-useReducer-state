@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../components/Child.css"
 
-const Child = () => {
+const Child = ({count, setCount}) => {
 
 
-    const [count, setCount] = useState(0)
+    // console.log(count)
 
 
     return (
@@ -12,8 +12,8 @@ const Child = () => {
             <div className='child-container'>
                 <h3>{count}</h3>
                 <div>
-                    <button>Decrement</button>
-                    <button>Increment</button>
+                    <button onClick={()=> setCount(count - 1)}>-</button>
+                    <button onClick={()=> setCount((pre)=> pre + 1)}>+</button>
                 </div>
             </div>
         </div>
