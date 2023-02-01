@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { COUNTER_CONTEXT } from '../../App';
 
-const Perent = ({count}) => {
+const Perent = () => {
+
+    const {count} = useContext(COUNTER_CONTEXT)
+
     return (
         <div> {/*className='h-screen bg-orange-300'*/}
             <div className='child-container'>

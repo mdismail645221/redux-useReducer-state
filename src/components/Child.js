@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { COUNTER_CONTEXT } from '../App';
 import "../components/Child.css"
 
-const Child = ({count, setCount}) => {
+const Child = () => {
 
 
-    // console.log(count)
+    const { count, setCount } = useContext(COUNTER_CONTEXT)
 
 
     return (
